@@ -1,0 +1,167 @@
+.hero {
+  font-family: sans-serif;
+  max-width: 1440px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+  padding: 20px;
+  gap: 40px;
+  border-radius: 10px;
+}
+
+.left {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.hero_span {
+  font-size: 18px;
+  color: #3d3d3d;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.hero_h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+}
+
+.hero_h1_span {
+  color: #46a358;
+  font-weight: 700;
+}
+
+.hero_p {
+  font-size: 1rem;
+  color: #727272;
+  margin-bottom: 20px;
+}
+
+.hero_btn {
+  padding: 12px 25px;
+  background-color: #46a358;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero_btn::after {
+  content: "→";
+  font-size: 1.125rem;
+}
+
+.right {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 20px 10px;
+  }
+
+  .hero_inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .hero_h1 {
+    font-size: 2rem;
+  }
+
+  .hero_p {
+    font-size: 0.9rem;
+  }
+
+  .hero_btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero_span {
+    font-size: 0.9rem;
+  }
+
+  .hero_p {
+    font-size: 0.85rem;
+  }
+
+  .hero_btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .right img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_inner {
+    padding: 10px;
+  }
+
+  .hero_h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero_span {
+    font-size: 0.8rem;
+  }
+
+  .hero_p {
+    font-size: 0.75rem;
+  }
+
+  .hero_btn {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+  }
+
+  .right img {
+    max-width: 200px;
+  }
+}

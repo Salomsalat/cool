@@ -1,0 +1,54 @@
+.newsletter {
+    text-align: center;
+    width: 400px;
+  }
+  
+  .newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #218838;
+  }
+  
+  .newsletter p {
+    font-size: 14px;
+    color: #666;
+  }
+  @media only screen and (max-width: 768px) {
+    .newsletter {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .newsletter input {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .newsletter button {
+      width: 50%;
+      margin-top: 10px;
+    }
+  }
+  
+  
